@@ -13,7 +13,8 @@ def sort_list(items, ascending=True):
         raise RuntimeError(f"No puede ordenar {type(items)}")
     
     return sorted(items, reverse=(not ascending))
-
+def to_uppercase(items):
+    return [word.upper() for word in items]
 
 if __name__ == "__main__":
     file_path = os.path.join(".", FILENAME)
@@ -25,4 +26,4 @@ if __name__ == "__main__":
     else:
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
 
-    print (sort list(word list))
+    print (to_uppercase (sort list(word list)))
